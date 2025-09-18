@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placemate - Mock Interview</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mock-interview.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h1>PLACEMATE</h1></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="mock-interview.html" class="nav-link"><i class="fas fa-microphone"></i> Mock Interview</a></li>
+                    <li><a href="resume-analysis.html" class="nav-link"><i class="fas fa-file-alt"></i> Resume Analysis</a></li>
+                    <li><a href="company-insights.html" class="nav-link"><i class="fas fa-building"></i> Company Insights</a></li>
+                    <li><a href="progress-scores.html" class="nav-link"><i class="fas fa-chart-line"></i> Progress & Scores</a></li>
+                    <li><a href="resources.html" class="nav-link"><i class="fas fa-book"></i> Resources</a></li>
+                    <li><a href="profile-integration.html" class="nav-link"><i class="fas fa-user"></i> Profile & Integration</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="welcome-message"><span>Welcome back, John!</span></div>
+                <div class="user-profile"><div class="user-avatar">JD</div></div>
+            </header>
+            <div class="page-container">
+                <section id="mock-interview" class="page active">
+                    <div class="page-header">
+                        <h2>Mock Interview Practice</h2>
+                        <p>Practice with AI-powered interviews to improve your skills</p>
+                    </div>
+                    <div class="interview-type-grid">
+                        <div class="card interview-type-card"><div class="interview-icon-bg icon-technical"><i class="fas fa-laptop-code"></i></div><h4>Technical</h4><p>Coding problems, system design, and technical concepts</p><span class="questions-completed">4 questions completed</span></div>
+                        <div class="card interview-type-card"><div class="interview-icon-bg icon-behavioral"><i class="fas fa-users"></i></div><h4>Behavioral</h4><p>Situational questions and soft skills assessment</p><span class="questions-completed">3 questions completed</span></div>
+                        <div class="card interview-type-card"><div class="interview-icon-bg icon-hr"><i class="fas fa-briefcase"></i></div><h4>HR Round</h4><p>Company culture fit and general interview questions</p><span class="questions-completed">2 questions completed</span></div>
+                    </div>
+                    <div class="tab-container">
+                        <nav class="tabs-nav">
+                            <ul>
+                                <li><a href="#practice-session" class="active">Practice Session</a></li>
+                                <li><a href="#interview-history">Interview History</a></li>
+                                <li><a href="#feedback-analysis">Feedback & Analysis</a></li>
+                            </ul>
+                        </nav>
+                        <div class="tab-content">
+                            <div id="practice-session" class="tab-pane active">
+                                <div class="session-grid">
+                                    <div class="card live-session-card"><i class="fas fa-play-circle play-icon"></i><h3>Ready to start?</h3><p>Click below to begin your interview session</p><div class="button-group"><button class="btn btn-primary"><i class="fas fa-play"></i> Start Interview</button><button class="btn btn-secondary"><i class="fas fa-video"></i> Video Mode</button></div></div>
+                                    <div class="card current-question-card"><div class="question-type-tabs"><button class="qt-tab active">Technical</button><button class="qt-tab">Behavioral</button><button class="qt-tab">HR</button></div><div class="question-content"><div class="question-display"><span class="question-number">1</span><p class="question-text">Explain the difference between let, const, and var in JavaScript.</p></div><div class="timer-info"><i class="fas fa-stopwatch"></i> 2 minutes recommended</div><div class="pagination-controls"><button class="btn btn-secondary btn-sm">Previous</button><div class="dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div><button class="btn btn-secondary btn-sm">Next</button></div></div></div>
+                                </div>
+                            </div>
+                            <div id="interview-history" class="tab-pane">
+                                <div class="card">
+                                    <table class="history-table">
+                                        <thead><tr><th>Interview Type</th><th>Date</th><th>Score</th><th>Duration</th><th>Actions</th></tr></thead>
+                                        <tbody>
+                                            <tr><td data-label="Interview Type">Technical (JavaScript)</td><td data-label="Date">2025-09-14</td><td data-label="Score">88/100</td><td data-label="Duration">25 min</td><td data-label="Actions"><button class="btn btn-secondary btn-sm">View Feedback</button></td></tr>
+                                            <tr><td data-label="Interview Type">Behavioral</td><td data-label="Date">2025-09-12</td><td data-label="Score">92/100</td><td data-label="Duration">30 min</td><td data-label="Actions"><button class="btn btn-secondary btn-sm">View Feedback</button></td></tr>
+                                            <tr><td data-label="Interview Type">HR Round</td><td data-label="Date">2025-09-10</td><td data-label="Score">-</td><td data-label="Duration">15 min</td><td data-label="Actions"><button class="btn btn-secondary btn-sm">View Feedback</button></td></tr>
+                                            <tr><td data-label="Interview Type">Technical (System Design)</td><td data-label="Date">2025-09-08</td><td data-label="Score">75/100</td><td data-label="Duration">45 min</td><td data-label="Actions"><button class="btn btn-secondary btn-sm">View Feedback</button></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="feedback-analysis" class="tab-pane">
+                                <div class="feedback-grid">
+                                    <div class="card"><h3>Performance Breakdown</h3><div class="progress-item"><div class="progress-label"><span>Technical Average</span><span>82%</span></div><div class="progress-bar-container"><div class="progress-bar" style="width: 82%"></div></div></div><div class="progress-item"><div class="progress-label"><span>Behavioral Average</span><span>92%</span></div><div class="progress-bar-container"><div class="progress-bar" style="width: 92%"></div></div></div></div>
+                                    <div class="card"><h3>Key Areas</h3><ul class="feedback-list"><li><i class="fas fa-check-circle success-icon-small"></i> Strong problem-solving communication.</li><li><i class="fas fa-check-circle success-icon-small"></i> Excellent use of STAR method in behavioral answers.</li><li><i class="fas fa-exclamation-triangle warning-icon-small"></i> Need to improve speed on data structure problems.</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

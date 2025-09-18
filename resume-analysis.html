@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placemate - Resume Analysis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/resume-analysis.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h1>PLACEMATE</h1></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="mock-interview.html" class="nav-link"><i class="fas fa-microphone"></i> Mock Interview</a></li>
+                    <li><a href="resume-analysis.html" class="nav-link"><i class="fas fa-file-alt"></i> Resume Analysis</a></li>
+                    <li><a href="company-insights.html" class="nav-link"><i class="fas fa-building"></i> Company Insights</a></li>
+                    <li><a href="progress-scores.html" class="nav-link"><i class="fas fa-chart-line"></i> Progress & Scores</a></li>
+                    <li><a href="resources.html" class="nav-link"><i class="fas fa-book"></i> Resources</a></li>
+                    <li><a href="profile-integration.html" class="nav-link"><i class="fas fa-user"></i> Profile & Integration</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="welcome-message"><span>Welcome back, John!</span></div>
+                <div class="user-profile"><div class="user-avatar">JD</div></div>
+            </header>
+            <div class="page-container">
+                 <section id="resume-analysis" class="page active">
+                    <div class="page-header">
+                        <h2>Resume Analysis</h2>
+                        <p>Get AI-powered feedback to optimize your resume</p>
+                    </div>
+                    <div class="analysis-grid">
+                        <div class="card upload-card">
+                            <h3>Upload Your Resume</h3>
+                            <div class="upload-success-state">
+                                <i class="fas fa-check-circle success-icon"></i>
+                                <h4>File uploaded successfully!</h4>
+                                <p class="filename">resume_john_doe.pdf</p>
+                                <div class="button-group">
+                                    <button class="btn btn-primary"><i class="fas fa-rocket"></i> Analyze Resume</button>
+                                    <button class="btn btn-secondary"><i class="fas fa-upload"></i> Upload New</button>
+                                </div>
+                            </div>
+                            <div class="file-info">
+                                <h4>File Information:</h4>
+                                <ul>
+                                    <li><span>File Size:</span> <strong>2.4 MB</strong></li>
+                                    <li><span>Pages:</span> <strong>2 pages</strong></li>
+                                    <li><span>Last Modified:</span> <strong>2 days ago</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card quick-analysis-card">
+                            <h3>Quick Analysis</h3>
+                            <div class="overall-score">
+                                <span class="score-value">82</span>
+                                <p>Overall Score</p>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 82%"></div></div>
+                            </div>
+                            <ul class="score-breakdown">
+                                <li><div><i class="fas fa-check-circle success-icon-small"></i> Format & Structure</div><span class="score-badge">86</span></li>
+                                <li><div><i class="fas fa-check-circle success-icon-small"></i> Content Quality</div><span class="score-badge">78</span></li>
+                                <li><div><i class="fas fa-exclamation-triangle warning-icon-small"></i> Keywords Optimization</div><span class="score-badge">65</span></li>
+                                <li><div><i class="fas fa-check-circle success-icon-small"></i> ATS Compatibility</div><span class="score-badge">89</span></li>
+                            </ul>
+                            <button class="btn btn-primary btn-full-width"><i class="fas fa-search-plus"></i> View Detailed Analysis</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

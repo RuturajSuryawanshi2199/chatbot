@@ -1,0 +1,144 @@
+/* --- Resume Analysis Page Styles --- */
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.upload-card h3,
+.quick-analysis-card h3 {
+    margin-bottom: 24px;
+}
+
+.upload-success-state {
+    text-align: center;
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.success-icon {
+    font-size: 48px;
+    color: #10B981;
+    margin-bottom: 16px;
+}
+
+.upload-success-state h4 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.filename {
+    color: var(--text-light);
+    margin-bottom: 24px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.file-info h4 {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.file-info ul {
+    list-style: none;
+}
+
+.file-info li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-light);
+    padding: 8px 0;
+}
+
+.file-info li:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.file-info strong {
+    color: var(--text-dark);
+}
+
+.overall-score {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.overall-score .score-value {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.overall-score p {
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #E5E7EB;
+    border-radius: 99px;
+    height: 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 99px;
+}
+
+.score-breakdown {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.score-breakdown li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-weight: 500;
+}
+
+.score-breakdown li:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.score-breakdown i {
+    margin-right: 12px;
+}
+
+.success-icon-small {
+    color: #10B981;
+}
+
+.warning-icon-small {
+    color: #F59E0B;
+}
+
+.score-badge {
+    background-color: #F3F4F6;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.btn-full-width {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .analysis-grid {
+        grid-template-columns: 1fr;
+    }
+}

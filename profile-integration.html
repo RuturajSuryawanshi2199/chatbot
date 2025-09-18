@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placemate - Profile & Integration</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profile-integration.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h1>PLACEMATE</h1></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="mock-interview.html" class="nav-link"><i class="fas fa-microphone"></i> Mock Interview</a></li>
+                    <li><a href="resume-analysis.html" class="nav-link"><i class="fas fa-file-alt"></i> Resume Analysis</a></li>
+                    <li><a href="company-insights.html" class="nav-link"><i class="fas fa-building"></i> Company Insights</a></li>
+                    <li><a href="progress-scores.html" class="nav-link"><i class="fas fa-chart-line"></i> Progress & Scores</a></li>
+                    <li><a href="resources.html" class="nav-link"><i class="fas fa-book"></i> Resources</a></li>
+                    <li><a href="profile-integration.html" class="nav-link"><i class="fas fa-user"></i> Profile & Integration</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="welcome-message"><span>Welcome back, John!</span></div>
+                <div class="user-profile"><div class="user-avatar">JD</div></div>
+            </header>
+            <div class="page-container">
+                <section id="profile" class="page active">
+                    <div class="page-header">
+                        <h2>Profile & Integration</h2>
+                        <p>Manage your profile and connect professional accounts.</p>
+                    </div>
+
+                    <div class="profile-page-layout">
+                        <aside class="profile-summary-card">
+                            <div class="profile-avatar-section">
+                                <div class="profile-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <h3>John Doe</h3>
+                                <p>Software engineer</p>
+                                <button class="btn btn-secondary btn-sm"><i class="fas fa-upload"></i> Upload Photo</button>
+                            </div>
+                            <div class="profile-contact-info">
+                                <ul>
+                                    <li><i class="fas fa-envelope"></i><span>john.doe@email.com</span></li>
+                                    <li><i class="fas fa-phone"></i><span>+1 (555) 123-4567</span></li>
+                                    <li><i class="fas fa-map-marker-alt"></i><span>San Francisco, CA</span></li>
+                                    <li><i class="fas fa-calendar-alt"></i><span>Member since Jan 2024</span></li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                        <div class="profile-details">
+                            <nav class="tabs-nav">
+                                <ul>
+                                    <li><a href="#profile-tab" class="active">Profile</a></li>
+                                    <li><a href="#integrations-tab">Integrations</a></li>
+                                    <li><a href="#settings-tab">Settings</a></li>
+                                    <li><a href="#data-export-tab">Data & Export</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="tab-content">
+                                <div id="profile-tab" class="tab-pane active">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h3>Profile Information</h3>
+                                            <button class="btn btn-secondary btn-sm"><i class="fas fa-pencil-alt"></i> Edit</button>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="info-grid">
+                                                <div class="info-item">
+                                                    <label>First Name</label>
+                                                    <p>John</p>
+                                                </div>
+                                                <div class="info-item">
+                                                    <label>Last Name</label>
+                                                    <p>Doe</p>
+                                                </div>
+                                                <div class="info-item">
+                                                    <label>Email</label>
+                                                    <p>john.doe@email.com</p>
+                                                </div>
+                                                <div class="info-item">
+                                                    <label>Phone</label>
+                                                    <p>+1 (555) 123-4567</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item full-width">
+                                                <label>Job Title</label>
+                                                <p>Software Engineer</p>
+                                            </div>
+                                            <div class="info-item full-width">
+                                                <label>Bio</label>
+                                                <p>Passionate software engineer with 3+ years of experience in full-stack development. Experienced in React, Node.js, Python, and cloud technologies.</p>
+                                            </div>
+                                            <div class="info-item full-width">
+                                                <label>Skills</label>
+                                                <div class="tags-container">
+                                                    <span class="tag">JavaScript</span>
+                                                    <span class="tag">React</span>
+                                                    <span class="tag">Node.js</span>
+                                                    <span class="tag">Python</span>
+                                                    <span class="tag">AWS</span>
+                                                    <span class="tag">Docker</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h3>Career Goals & Preferences</h3>
+                                        </div>
+                                        <div class="card-body">
+                                             <div class="info-grid">
+                                                <div class="info-item">
+                                                    <label>Target Role</label>
+                                                    <p>Senior Software Engineer</p>
+                                                </div>
+                                                <div class="info-item">
+                                                    <label>Salary Range</label>
+                                                    <p>$120k - $180k</p>
+                                                </div>
+                                                <div class="info-item">
+                                                    <label>Preferred Industries</label>
+                                                     <div class="tags-container">
+                                                        <span class="tag">Fintech</span>
+                                                        <span class="tag">Healthcare</span>
+                                                    </div>
+                                                </div>
+                                                <div class="info-item">
+                                                    <label>Work Preference</label>
+                                                    <div class="tags-container">
+                                                        <span class="tag">Remote</span>
+                                                        <span class="tag">Hybrid</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="integrations-tab" class="tab-pane">
+                                    <div class="card"><p>Integrations settings will go here.</p></div>
+                                </div>
+                                <div id="settings-tab" class="tab-pane">
+                                     <div class="card"><p>Account settings will go here.</p></div>
+                                </div>
+                                <div id="data-export-tab" class="tab-pane">
+                                     <div class="card"><p>Data and export options will go here.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
